@@ -1,0 +1,8 @@
+*.pyc
+*.pyo
+*.db
+.DS_Store
+mysite/local_settings.py
+.coverage
+/static
+mysite/settings.py
