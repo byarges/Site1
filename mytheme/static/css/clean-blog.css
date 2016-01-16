@@ -394,10 +394,10 @@ body {
   webkit-tap-highlight-color: #0085a1;
 }
 body {
-  padding-top: 60px;
+  padding-top: 45px;
 }
 @media (max-width: 979px) {
   body {
-    padding-top: 0px;
+    padding-top: 45px;
   }
 }
