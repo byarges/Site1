@@ -4,19 +4,122 @@
 
 
 {% block indexonly %}
-<header class="intro-header" style="background-image: url({% static "images/WarmSunSet.jpg" %})">
+
+<script>
+$(document).ready(function(){
+    $("#toggleComputing").click(function(){
+        $( "#computing" ).toggle();
+    });
+    $("#toggleAerospace").click(function(){
+        $( "#aerospace" ).toggle();
+    });
+    $("#toggleWelding").click(function(){
+        $( "#welding" ).toggle();
+    });
+    $("#toggleCad").click(function(){
+        $( "#cad" ).toggle();
+    });
+    $("#toggleArt").click(function(){
+        $( "#art" ).toggle();
+    });
+});
+</script>
+
+<header class="intro-header" style="background-image: url({% static "images/large-sparks.jpg" %})">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Welcome to my world</h1>
-                        <hr class="small">
-                        <span class="subheading">Code, Art, Labor of love</span>
+                        <h1 class="landingHeading">For fun and profit</h1>
+                        
                     </div>
                 </div>
             </div>
         </div>
 </header>
+
+
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="skills">
+
+
+<div class="row-fluid">
+<h4  id="toggleComputing" ><button type="button" class="btn btn-success">Computing <span class="caret"></span></button> </h4>
+
+<ul id="computing"  class="collapse" >
+    <li>Python web application development</li>
+    <li>Full stack deployment/admin: 
+        <ul>
+            <li>Linux VPS</li>
+            <li>Heroku PaaS</li>
+        </ul>
+    <li>HTML, CSS, JavaScript</li>
+    <li>Django, Bootstrap</li>
+</ul>
+</div>
+
+<div class="row-fluid">
+<h4 id="toggleAerospace" > <button type="button" class="btn btn-primary">Aerospace <span class="caret"></span></button>  </h4>
+<ul id="aerospace" class="collapse">
+    <li>Aircraft Systems/Structures assembly, repair, and modification</li>
+
+    <li>Shipside support:  
+        <ul>
+            <li>Technical production support</li>
+                <ul>
+                    <li>Systems</li>
+                    <li>Structures</li>
+                    <li>Functional Test</li>
+                    <li>Propulsion</li>
+                </ul>
+            <li>Non-Conformance diagnostics</li>
+            <li>3-D geometry and data interrogation</li>
+            <li>Root cause analysis and corrective action</li>
+            <li>Member of cross-disciplinary action teams</li>
+        </ul>
+</ul>
+</div>            
+
+<div class="row-fluid">
+<h4 id="toggleWelding" ><button type="button" class="btn btn-warning">Welding/Fabrication <span class="caret"></span></button> </h4>
+<ul id="welding" class="collapse">
+    <li>MIG (Metal Inert Gas)</li>
+    <li>TIG (Tungsten Inert Gas)</li>
+    <li>SMAW Stick (Shielded Metal Arc Welding)</li>
+    <li>Oxyacetylene cutting/brazing/forming</li>
+    <li>Plasma arc cutting</li>
+</ul>
+</div>
+
+<div class="row-fluid">
+<h4 id="toggleCad" > <button type="button" class="btn btn-danger">CAD/CAM <span class="caret"></span></button> </h4>
+<ul id="cad" class="collapse">
+    <li>CATIA and associated Dassault Systèmes Software</li>
+    <li>AutoCAD</li>
+    <li>Computer Numerical Controlled Machinining</li>
+        <ul>
+            <li>Machine configuration</li>
+            <li>Mechanical and G-Code troubleshooting</li>
+            <li>Machine operation</li>
+            <li>Machine Maintenance</li>
+        <ul>
+    
+</ul>
+</div>
+
+
+<div class="row-fluid">
+<h4 id="toggleArt" ><button type="button" class="btn btn-info">Art <span class="caret"></span></button> </h4>
+<ul id="art" class="collapse">
+    <li>Metal Sculpture and Mixed-media</li>
+    <li>Shakuhachi Japanese Flute</li>
+</ul>
+</div>
+                        
+
+</div>
+</div>
+
 {% endblock %}
 
 
