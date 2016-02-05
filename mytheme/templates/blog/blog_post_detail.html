@@ -90,7 +90,7 @@
 
 {% block blog_post_detail_sharebuttons %}
 {% set_short_url_for blog_post %}
-<a class="btn btn-sm share-twitter" target="_blank" href="http://twitter.com/home?status={{ blog_post.short_url|urlencode }}%20{{ blog_post.title|urlencode }}">{% trans "Share on Twitter" %}</a>
+<a class="btn btn-sm share-twitter" target="_blank" href="http://twitter.com/home?status=http://benyarges.com{{ request.path }}%20{{ blog_post.title|urlencode }}">{% trans "Share on Twitter" %}</a>
 <a class="btn btn-sm share-facebook" target="_blank" href="http://facebook.com/sharer.php?u=http://benyarges.com{{ request.path }}&amp;t={{ blog_post.title|urlencode }}">{% trans "Share on Facebook" %}</a>
 {% endblock %}
 
